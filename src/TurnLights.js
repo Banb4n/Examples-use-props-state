@@ -78,7 +78,7 @@ class TurnLights extends React.Component {
     // Ici modifie le style des Light en fonction de la value du state
     const lightStyles = {
       backgroundColor: lightSwitch === true ? "gold" : "white",
-      boxShadow: `${lightSwitch === true ? "0 0 50px gold" : "none"}`,
+      boxShadow: lightSwitch === true ? "0 0 50px gold" : "none",
       ...light
     };
 
